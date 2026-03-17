@@ -1,0 +1,15 @@
+{
+  "name": "Unitree ROS2 Foxy Dev",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "unitree_dev",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-iot.vscode-ros",
+    "ms-vscode.cpptools",
+    "ms-python.python"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "bash .devcontainer/post_create.sh"
+}

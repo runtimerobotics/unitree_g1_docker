@@ -1,0 +1,12 @@
+services:
+  unitree_dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    container_name: unitree_dev
+    network_mode: host        # REQUIRED
+    privileged: true          # REQUIRED
+    environment:
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+    tty: true

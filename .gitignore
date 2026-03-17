@@ -1,0 +1,6 @@
+.devcontainer/__pycache__
+.vscode
+build
+install
+log
+current.zip
