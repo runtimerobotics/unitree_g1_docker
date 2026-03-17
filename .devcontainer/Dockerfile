@@ -15,8 +15,14 @@ RUN apt-get update && apt-get install -y \
     python3-vcstool \
     libspdlog-dev \
     libyaml-cpp-dev \
+    libgl1 \
+    libegl1 \
+    libx11-6 \
     net-tools \
     iputils-ping \
+    mesa-utils \
+    x11-apps \
+    xauth \
     && rm -rf /var/lib/apt/lists/*
 
 # ROS dep manager
